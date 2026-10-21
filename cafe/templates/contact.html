@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}Liên hệ{% endblock %}{% block content %}<h1>Liên hệ</h1><p>{{ shop.name }}</p><p>Địa chỉ: {{ shop.address }}</p><p>Điện thoại: <a href="tel:{{ shop.phone|replace(' ','') }}">{{ shop.phone }}</a></p><p>Giờ mở cửa: {{ shop.open }}h – {{ shop.close }}h mỗi ngày.</p>{% endblock %}
